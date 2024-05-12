@@ -1,5 +1,0 @@
-1. Find Data
-2. Do SQL work
-3. Then Tableau vizualization
-4. Find new Data for cleaning
-5. Do something in Python
