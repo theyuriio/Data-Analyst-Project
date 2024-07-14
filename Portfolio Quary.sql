@@ -89,11 +89,11 @@ Order by Profit desc
 
 
 --Profit by city
-SELECT o.City, SUM(profit) as "Profit"
+SELECT  o.City, o.State, SUM(profit) as "Profit"
 FROM dbo.Details d
 INNER JOIN dbo.Orders o ON d.Order_ID = o.Order_ID
-Group by City 
-Order by Profit desc;
+GROUP BY o.City, o.State
+ORDER BY Profit DESC;
 
 
 
