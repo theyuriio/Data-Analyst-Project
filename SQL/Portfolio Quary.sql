@@ -122,10 +122,4 @@ ORDER by 'Profit' desc;
 
 
 
---Profit by Month
-SELECT sum(d.amount) as 'Amount', sum(d.Quantity) as 'Quantity', sum(Profit) as 'Profit', MONTH(o.Order_Date) as 'Month'
-FROM dbo.Details d 
-INNER JOIN DBO.Orders o ON d.Order_ID = o.Order_ID
-GROUP by MONTH(o.Order_Date)
-ORDER by 'Profit' desc;
 >>>>>>> badafe4bbf5e717066320302164085600ee548a7
